@@ -1,0 +1,20 @@
+h2 {
+	color:blue;
+	text-align:center;
+	}
+table {
+		color:green;
+	text-align:center;
+	}
+div {
+	background-color:red;
+	color:yellow;
+	width:500px
+	height: 400px;
+	margin: 30px;
+	padding: 20px;
+	text-align:center;
+	font-family: Arial, sans-serif;
+	font-size: 28px
+	font-weight: bold;
+}
