@@ -3,10 +3,14 @@ h2 {
 	text-align:center;
 	}
 table {
-		color:green;
+	color:green;
 	text-align:center;
+	border:solid 1px green;
+	border-collapse: collapse;
+	margin: 10px;
+	width: 50%;
 	}
-div {
+/* div {
 	background-color:red;
 	color:yellow;
 	width:500px
@@ -15,6 +19,44 @@ div {
 	padding: 20px;
 	text-align:center;
 	font-family: Arial, sans-serif;
-	font-size: 28px
+	border: 3px dotted blue;
+	font-size: 28px;
 	font-weight: bold;
+} */
+#first {
+	background-color:red;
+	color:yellow;
+	width:500px
+	height: 400px;
+	margin: 30px;
+	padding: 20px;
+	text-align:center;
+	font-family: Arial, sans-serif;
+	border: 3px dotted blue;
+	font-size: 28px;
+	font-weight: bold;
+}
+#second {
+	background-color:green;
+	color:yellow;
+	width:500px
+	height: 400px;
+	margin: 30px;
+	padding: 20px;
+	text-align:center;
+	font-family: Arial, sans-serif;
+	border: 3px dotted blue;
+	font-size: 10px;
+	/* font-weight: bold; */
+}
+.w {
+	font-style: italic;
+}
+th {
+	background-color: lightgray;
+}
+th,td {
+	border: 1px solid black;
+	padding: 5px;
+	
 }
