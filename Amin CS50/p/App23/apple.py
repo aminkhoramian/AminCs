@@ -11,17 +11,20 @@ from flask import Flask, render_template
 app=Flask(__name__)
 
 app.static_folder = 'static'
-time=datetime.date.today()
-
+time=datetime.datetime.now()
+month=time.month
+year=time.year
+day=time.day
+new_year= day==1 and month==1
+names={"Amin", "Reza", "Amir"}
+var2="Salaaam"
 @app.route("/")
 def index():
-    var2="Salaaam"
-    return render_template("index.html",var1=var2, var3="Amin")
-@app.route("/david")
-def david():
-    return "Hello david"
+    return render_template("index.html",var1=var2, var3=year, var4=month, var5=day, new_year=new_year, names=names)
+@app.route("/more")
+def more():
+    return render_template("more.html",var1=var2, var3=year, var4=month, var5=day, new_year=new_year, names=names)
 @app.route("/<string:name>")
 def hello(name):
     name=name.capitalize()
     return render_template("index.html",var1=name)
-#
