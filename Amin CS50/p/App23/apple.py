@@ -28,9 +28,8 @@ def more():
 def hello(name):
     name=name.capitalize()
     return render_template("index.html",var1=name)
-@app.route("/chakh", methods=["GET"])
+@app.route("/chakh", methods=["POST"])
 def chakh():
-    name=request.args.get("name")
-#    name=name.capitalize()
+    name=request.form.get("name")
+    name=name.capitalize()
     return render_template("index.html",name=name)
-
