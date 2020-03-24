@@ -10,7 +10,7 @@
 	<h2> </h2>
 	<div id="first">
 	  It is <span class="w"> {{var1}} </span> webpage!
-	<a href="{{url_for('david')}}"> Go to Amin </a>
+	<a href={% block app %} {% endblock %}> {% block amin %}	 {% endblock %} </a>
 	 <p>  </p>
 	 </div>
 	<div id="second">
@@ -56,8 +56,11 @@
 		  </tr>
 	</table>
 	  <p> </p>
+	  <form action="{{url_for('chakh')}}" method="post">
+		<input type="text" name="name" placeholder="نام خود را وارد کنید">
+		<button> Submit </button>
+	  </form>
 	  <form>
-	  
 		  <div>
 			<input type="text" placeholder="Full Name" name= "name">
 			<input type="password" placeholder="Password" name= "password">
